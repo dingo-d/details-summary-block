@@ -1,0 +1,24 @@
+{
+  "name": "details-summary-block",
+  "version" : "1.0.0",
+  "description" : "Simple summary block",
+  "author" : "Denis Žoljom",
+  "license": "MIT",
+  "keywords" : [ "summary", "details", "expanded" ],
+  "homepage": "https://github.com/dingo-d/details-summary-block#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dingo-d/details-summary-block.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dingo-d/details-summary-block/issues"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^3.1.0"
+  },
+  "scripts": {
+      "build": "wp-scripts build",
+      "lint:js": "wp-scripts lint-js",
+      "start": "wp-scripts start"
+  }
+}
