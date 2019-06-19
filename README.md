@@ -21,11 +21,16 @@
 
 ## Install
 
+Go to your plugin folder, clone the block and install necessary development dependencies
+
 ```sh
+git clone git@github.com:dingo-d/details-summary-block.git
 npm install
 ```
 
 ## Usage
+
+To start developing, in your terminal, run
 
 ```sh
 npm run start

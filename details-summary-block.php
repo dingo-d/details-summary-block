@@ -16,8 +16,8 @@ function dsb_register_block_assets() {
   wp_register_script(
       'details-summary-block',
       plugins_url( $block_path , __FILE__ ),
-      [ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor', 'block-editor' ],
-      filemtime( plugin_dir_path( $block_path , __FILE__ ) )
+      [ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor' ],
+      '1.0.0'
   );
 
   register_block_type( 'dsb/details-summary-block',
