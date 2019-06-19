@@ -34,6 +34,7 @@ registerBlockType( 'dsb/details-summary-block', {
 			>
 				<summary>
 					<RichText
+						tagName='summary'
 						value={ summaryContent }
 						onChange={ ( newContent ) => {
 							setAttributes({ summaryContent: newContent });
@@ -57,7 +58,10 @@ registerBlockType( 'dsb/details-summary-block', {
 		return (
 			<Fragment>
 				<details>
-					<summary>{ summaryContent }</summary>
+					<RichText.Content
+						tagName='summary'
+						value={ summaryContent }
+					/>
 					<div>
 						<InnerBlocks.Content />
 					</div>
