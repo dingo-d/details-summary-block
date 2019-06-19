@@ -21,7 +21,11 @@
 
 ![Block example](readme.gif)
 
-## Install
+## Install (using zip file)
+
+The zip file can be downloaded [here](https://github.com/dingo-d/details-summary-block/releases/download/1.0.0/details-summary-block.zip). Just install it as a plugin and you're good to go.
+
+## Install (manually)
 
 Go to your plugin folder, clone the block and install necessary development dependencies
 
