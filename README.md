@@ -19,6 +19,8 @@
 
 ### 🏠 [Homepage](https://github.com/dingo-d/details-summary-block#readme)
 
+![Block example](readme.gif)
+
 ## Install
 
 Go to your plugin folder, clone the block and install necessary development dependencies
@@ -35,6 +37,16 @@ To start developing, in your terminal, run
 ```sh
 npm run start
 ```
+
+## Build
+
+To build the block, in your terminal, run
+
+```sh
+npm run build
+```
+
+Once built, `node_modules` part can be removed.
 
 ## Author
 
