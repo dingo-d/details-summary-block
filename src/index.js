@@ -3,7 +3,7 @@
  */
 import { registerBlockType } from '@wordpress/blocks';
 import { Fragment } from '@wordpress/element';
-import { InnerBlocks } from '@wordpress/editor';
+import { InnerBlocks, RichText } from '@wordpress/editor';
 
 const ALLOWED_BLOCKS = [ 'core/code', 'core/paragraph' ];
 
@@ -25,16 +25,21 @@ registerBlockType( 'dsb/details-summary-block', {
 		const {
 			attributes: { summaryContent },
 			setAttributes,
+			className,
 		} = props;
 
 		return (
-			<details>
-				<summary
-					value={ summaryContent }
-					onChange={ ( newContent ) => {
-						setAttributes( { summaryContent: newContent } );
-					} }
-				/>
+			<details
+				className={ className }
+			>
+				<summary>
+					<RichText
+						value={ summaryContent }
+						onChange={ ( newContent ) => {
+							setAttributes({ summaryContent: newContent });
+						}}
+					/>
+				</summary>
 				<div>
 					<InnerBlocks
 						allowedBlocks={ ALLOWED_BLOCKS }
